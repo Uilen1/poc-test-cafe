@@ -53,9 +53,3 @@ This project is a proof-of-concept automated testing framework using [TestCafe](
 
 - Test results are saved in `reports/` as JSON and TXT.
 - Screenshots are saved in `screenshots/` for failed and successful tests.
-
-## License
-
-MIT
-
-```// filepath: /home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/README.md
