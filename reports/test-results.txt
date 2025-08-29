@@ -1,0 +1,11 @@
+ Running tests in:
+ - Chrome 139.0.0.0 / Ubuntu 22.04
+ - Chrome 139.0.0.0 / Ubuntu 22.04
+
+ My First Test
+ ✓ Check page title with screenshot (screenshots: /home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-08-28_12-26-49/test-1/Chrome_139.0.0.0_Ubuntu_22.04/1.png)
+ ✓ Check page title with screenshot (screenshots: /home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-08-28_12-26-49/test-2/Chrome_139.0.0.0_Ubuntu_22.04/1.png)
+ ✓ Check page title with screenshot (screenshots: /home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-08-28_12-26-49/test-3/Chrome_139.0.0.0_Ubuntu_22.04/1.png)
+
+
+ 3 passed (6s)

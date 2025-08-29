@@ -1,0 +1,29 @@
+{
+  "startTime": "2025-08-28T14:56:42.374Z",
+  "endTime": "2025-08-28T14:56:46.604Z",
+  "userAgents": [
+    "Chrome 139.0.0.0 / Ubuntu 22.04"
+  ],
+  "passed": 1,
+  "total": 1,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "My First Test",
+      "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/my_first_test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Check page title",
+          "meta": {},
+          "errs": [],
+          "durationMs": 2045,
+          "unstable": false,
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/reports/screenshots/my_first_test.png",
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

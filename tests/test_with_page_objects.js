@@ -1,0 +1,27 @@
+import ExamplePage from '../pages/example_page';
+
+fixture('Test with Page Objects')
+    .page('http://devexpress.github.io/testcafe/example/')
+    .beforeEach(async t => {
+        await t.maximizeWindow();
+    });
+
+test('Submit form and verify submission', async t => {
+    const examplePage = new ExamplePage();
+    const name = 'Test User';
+    const comment = 'This is a test comment.';
+
+    await examplePage.submitForm(t, name, comment);
+
+    const isSuccessful = await examplePage.isSubmissionSuccessful(t);
+    await t.expect(isSuccessful).ok('Form submission was not successful');
+});
+
+test('Enabling and select a rate', async t => {
+    const examplePage = new ExamplePage();
+    const offset = 9;
+    await t.click(examplePage.exampleMap.getElementByDataAttribute('data-testid', 'tried-testcafe-checkbox'));
+    await examplePage.setSliderValue(examplePage.exampleMap.selectSlider, offset);
+    await examplePage.verifySliderValue(examplePage.exampleMap.selectHandle, offset);
+
+});

@@ -1,0 +1,36 @@
+{
+  "startTime": "2025-08-29T15:47:06.141Z",
+  "endTime": "2025-08-29T15:47:10.626Z",
+  "userAgents": [
+    "Chrome 139.0.0.0 / Ubuntu 22.04",
+    "Chrome 139.0.0.0 / Ubuntu 22.04",
+    "Chrome 139.0.0.0 / Ubuntu 22.04",
+    "Chrome 139.0.0.0 / Ubuntu 22.04"
+  ],
+  "passed": 0,
+  "total": 1,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "Test with Page Objects",
+      "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Submit form and verify submission",
+          "meta": {},
+          "errs": [
+            "ReferenceError: Selector is not defined\n\nBrowser: Chrome 139.0.0.0 / Ubuntu 22.04\nScreenshot: /home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-08-29_12-47-05/test-1/Chrome_139.0.0.0_Ubuntu_22.04/errors/1.png\n\n    1 |import BaseMap from './base_map';\n    2 |export default class ExampleMap extends BaseMap {\n    3 |\n    4 |    constructor() {\n    5 |        super();\n >  6 |        this.submitButton = Selector('#submit-button');\n    7 |        this.nameInput = Selector('#developer-name');\n    8 |        this.featureCheckbox = Selector('#remoting-testing');\n    9 |        this.osSelect = Selector('#preferred-interface');\n   10 |        this.commentTextArea = Selector('#comments');\n   11 |        this.populateButton = Selector('#populate');\n\n   at new ExampleMap (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/maps/example_map.js:6:9)\n   at new ExamplePage (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/pages/example_page.js:8:27)\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:6:25)\n   at asyncGeneratorStep (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:1:49)\n   at _next (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:1:49)\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:1:49)\n   at apply (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:1:49)\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:13:2)"
+          ],
+          "durationMs": 2137,
+          "unstable": false,
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-08-29_12-47-05/test-1/Chrome_139.0.0.0_Ubuntu_22.04/errors/1.png",
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "The \"src\" option from the configuration file will be ignored."
+  ]
+}
