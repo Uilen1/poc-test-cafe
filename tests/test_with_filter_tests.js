@@ -1,8 +1,10 @@
 import XPathSelector from '../utils/xpath_selector';
+import { TEST_CAFE_URL } from '../configuration/constants/tests-url';
+
 
 fixture`Use XPath selectors - IS RUN`
     .meta({ severity: 'high', repeatDaily: true })
-    .page('https://devexpress.github.io/testcafe/example/');
+    .page(TEST_CAFE_URL);
 
 test.meta({ device: 'web', skip: false })
     ('Click checkboxes', async t => {
@@ -16,7 +18,7 @@ test.meta({ device: 'web', skip: false })
 
 fixture`Use XPath selectors - NOT RUN`
     .meta({ severity: 'high', repeatDaily: false })
-    .page('https://devexpress.github.io/testcafe/example/');
+    .page(TEST_CAFE_URL);
 
 test.meta({ device: 'web', skip: false })
     ('Click checkboxes', async t => {

@@ -1,7 +1,9 @@
 import ExamplePage from '../pages/example_page';
+import { TEST_CAFE_URL } from '../configuration/constants/tests-url';
+
 
 fixture('Test with Page Objects')
-    .page('http://devexpress.github.io/testcafe/example/')
+    .page(TEST_CAFE_URL)
     .beforeEach(async t => {
         await t.maximizeWindow();
     });

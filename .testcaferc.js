@@ -8,7 +8,7 @@ function validateMeta(excludeMeta, meta) {
 }
 
 module.exports = {
-    browsers: ['chrome'],
+    browsers: ['chrome --disable-save-password-bubble --disable-notifications --disable-infobars --incognito'],
     src: ['tests/'],
     screenshots: {
         takeOnFails: true,

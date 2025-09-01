@@ -1,7 +1,9 @@
 import { Selector } from 'testcafe';
+import { TEST_CAFE_URL } from '../configuration/constants/tests-url';
+
 
 fixture('My First Test')
-    .page('http://devexpress.github.io/testcafe/example/');
+    .page(TEST_CAFE_URL);
 
 test('Check page title with screenshot', async t => {
     await t
