@@ -16,7 +16,11 @@ export default class BasePage {
             .click(option);
     }
 
-    async setSliderValue(selectSlider, value, min = 0, max = 10) {
+    async selectCheckboxByAttribute(attribute, value) {
+        await t.click(this.baseMap.getElementByDataAttribute(attribute, value));
+    }
+
+    async setSliderValue(selectSlider, value, min = 1, max = 10) {
         await t.expect(selectSlider.exists).ok('Slider not found');
         await t.scrollIntoView(selectSlider);
 
@@ -27,7 +31,7 @@ export default class BasePage {
         const totalSteps = max - min;
         const stepWidth = sliderRect.width / totalSteps;
 
-        const offsetX = Math.round(stepWidth * (value - min));
+        const offsetX = Math.floor((stepWidth * (value - min)) * .99); // 99% to avoid going out of bounds
         const offsetY = Math.round(sliderRect.height / 2);
 
         await t.click(selectSlider, { offsetX, offsetY });

@@ -1,16 +1,69 @@
 {
-  "startTime": "2025-08-29T15:47:06.141Z",
-  "endTime": "2025-08-29T15:47:10.626Z",
+  "startTime": "2025-09-01T18:32:44.268Z",
+  "endTime": "2025-09-01T18:32:56.631Z",
   "userAgents": [
-    "Chrome 139.0.0.0 / Ubuntu 22.04",
-    "Chrome 139.0.0.0 / Ubuntu 22.04",
-    "Chrome 139.0.0.0 / Ubuntu 22.04",
     "Chrome 139.0.0.0 / Ubuntu 22.04"
   ],
-  "passed": 0,
-  "total": 1,
+  "passed": 7,
+  "total": 7,
   "skipped": 0,
   "fixtures": [
+    {
+      "name": "My First Test",
+      "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/my_first_test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Check page title with screenshot",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1778,
+          "unstable": false,
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-01_15-32-43/test-1/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
+          "skipped": false
+        },
+        {
+          "name": "Check page title with screenshot",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1565,
+          "unstable": false,
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-01_15-32-43/test-2/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
+          "skipped": false
+        },
+        {
+          "name": "Check page title with screenshot",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1479,
+          "unstable": false,
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-01_15-32-43/test-3/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Use XPath selectors - IS RUN",
+      "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_filter_tests.js",
+      "meta": {
+        "severity": "high",
+        "repeatDaily": true
+      },
+      "tests": [
+        {
+          "name": "Click checkboxes",
+          "meta": {
+            "device": "web",
+            "skip": false
+          },
+          "errs": [],
+          "durationMs": 583,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
     {
       "name": "Test with Page Objects",
       "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js",
@@ -19,18 +72,39 @@
         {
           "name": "Submit form and verify submission",
           "meta": {},
-          "errs": [
-            "ReferenceError: Selector is not defined\n\nBrowser: Chrome 139.0.0.0 / Ubuntu 22.04\nScreenshot: /home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-08-29_12-47-05/test-1/Chrome_139.0.0.0_Ubuntu_22.04/errors/1.png\n\n    1 |import BaseMap from './base_map';\n    2 |export default class ExampleMap extends BaseMap {\n    3 |\n    4 |    constructor() {\n    5 |        super();\n >  6 |        this.submitButton = Selector('#submit-button');\n    7 |        this.nameInput = Selector('#developer-name');\n    8 |        this.featureCheckbox = Selector('#remoting-testing');\n    9 |        this.osSelect = Selector('#preferred-interface');\n   10 |        this.commentTextArea = Selector('#comments');\n   11 |        this.populateButton = Selector('#populate');\n\n   at new ExampleMap (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/maps/example_map.js:6:9)\n   at new ExamplePage (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/pages/example_page.js:8:27)\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:6:25)\n   at asyncGeneratorStep (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:1:49)\n   at _next (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:1:49)\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:1:49)\n   at apply (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:1:49)\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js:13:2)"
-          ],
-          "durationMs": 2137,
+          "errs": [],
+          "durationMs": 2487,
           "unstable": false,
-          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-08-29_12-47-05/test-1/Chrome_139.0.0.0_Ubuntu_22.04/errors/1.png",
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Enabling and select a rate",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1462,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Use XPath selectors",
+      "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_xpath.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Click checkboxes",
+          "meta": {},
+          "errs": [],
+          "durationMs": 491,
+          "unstable": false,
+          "screenshotPath": null,
           "skipped": false
         }
       ]
     }
   ],
-  "warnings": [
-    "The \"src\" option from the configuration file will be ignored."
-  ]
+  "warnings": []
 }

@@ -19,8 +19,9 @@ test('Submit form and verify submission', async t => {
 
 test('Enabling and select a rate', async t => {
     const examplePage = new ExamplePage();
-    const offset = 9;
-    await t.click(examplePage.exampleMap.getElementByDataAttribute('data-testid', 'tried-testcafe-checkbox'));
+    const offset = 10;
+
+    await examplePage.selectCheckboxByAttribute('data-testid', 'tried-testcafe-checkbox')
     await examplePage.setSliderValue(examplePage.exampleMap.selectSlider, offset);
     await examplePage.verifySliderValue(examplePage.exampleMap.selectHandle, offset);
 
