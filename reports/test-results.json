@@ -1,33 +1,126 @@
 {
-  "startTime": "2025-09-01T19:23:33.595Z",
-  "endTime": "2025-09-01T19:23:41.459Z",
+  "startTime": "2025-09-02T17:45:53.806Z",
+  "endTime": "2025-09-02T17:46:10.185Z",
   "userAgents": [
     "Chrome 139.0.0.0 / Ubuntu 22.04"
   ],
-  "passed": 0,
-  "total": 1,
+  "passed": 8,
+  "total": 8,
   "skipped": 0,
   "fixtures": [
     {
-      "name": "TESTANDO LOGIN UTILIZNDO ROLES",
+      "name": "My First Test",
+      "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/my_first_test.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Check page title with screenshot",
+          "meta": {},
+          "errs": [],
+          "durationMs": 2549,
+          "unstable": false,
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-02_14-45-52/test-1/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
+          "skipped": false
+        },
+        {
+          "name": "Check page title with screenshot",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1529,
+          "unstable": false,
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-02_14-45-52/test-2/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
+          "skipped": false
+        },
+        {
+          "name": "Check page title with screenshot",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1429,
+          "unstable": false,
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-02_14-45-52/test-3/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "TESTANDO LOGIN UTILIZANDO ROLES",
       "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_login_role.js",
       "meta": {},
       "tests": [
         {
           "name": "Logando com o usuario standard",
           "meta": {},
-          "errs": [
-            "- Error in fixture.beforeEach hook -\nA call to an async function is not awaited. Use the \"await\" keyword before actions, assertions or chains of them to ensure that they run in the right sequence.\n\nBrowser: Chrome 139.0.0.0 / Ubuntu 22.04\nScreenshot: /home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-01_16-23-32/test-1/Chrome_139.0.0.0_Ubuntu_22.04/errors/1.png\n\n    2 |import { standartUser, visualUser, errorUser } from \"../utils/roles\";\n    3 |\n    4 |fixture('TESTANDO LOGIN UTILIZNDO ROLES')\n    5 |    .page(LOGIN_URL)\n    6 |    .beforeEach(async t => {\n >  7 |        t.maximizeWindow();\n    8 |    });\n    9 |\n   10 |test('Logando com o usuario standard', async t => {\n   11 |    await t.useRole(standartUser);\n   12 |});\n\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_login_role.js:7:11)\n   at asyncGeneratorStep (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_login_role.js:2:70)\n   at _next (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_login_role.js:2:70)\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_login_role.js:2:70)\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_login_role.js:2:70)\n   at <anonymous> (/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_login_role.js:8:6)"
-          ],
-          "durationMs": 5612,
+          "errs": [],
+          "durationMs": 3478,
           "unstable": false,
-          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-01_16-23-32/test-1/Chrome_139.0.0.0_Ubuntu_22.04/errors/1.png",
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Use XPath selectors - IS RUN",
+      "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_filter_tests.js",
+      "meta": {
+        "severity": "high",
+        "repeatDaily": true
+      },
+      "tests": [
+        {
+          "name": "Click checkboxes",
+          "meta": {
+            "device": "web",
+            "skip": false
+          },
+          "errs": [],
+          "durationMs": 555,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Test with Page Objects",
+      "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_page_objects.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Submit form and verify submission",
+          "meta": {},
+          "errs": [],
+          "durationMs": 2812,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        },
+        {
+          "name": "Enabling and select a rate",
+          "meta": {},
+          "errs": [],
+          "durationMs": 1361,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Use XPath selectors",
+      "path": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/tests/test_with_xpath.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "Click checkboxes",
+          "meta": {},
+          "errs": [],
+          "durationMs": 464,
+          "unstable": false,
+          "screenshotPath": null,
           "skipped": false
         }
       ]
     }
   ],
-  "warnings": [
-    "The \"src\" option from the configuration file will be ignored."
-  ]
+  "warnings": []
 }

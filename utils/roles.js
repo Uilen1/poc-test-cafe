@@ -1,6 +1,6 @@
 import { Role, Selector } from "testcafe";
 import { LOGIN_URL } from "../configuration/constants/tests-url";
-import { ERROR, STANDARD, VISUAL } from "../configuration/constants/users";
+import { ERROR, STANDARD, VISUAL } from "../data/users";
 import HomeMap from "../maps/home_map";
 
 const USERNAME = Selector('#user-name');
