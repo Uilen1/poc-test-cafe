@@ -1,6 +1,6 @@
 {
-  "startTime": "2025-09-02T17:45:53.806Z",
-  "endTime": "2025-09-02T17:46:10.185Z",
+  "startTime": "2025-09-02T19:58:16.142Z",
+  "endTime": "2025-09-02T19:58:34.018Z",
   "userAgents": [
     "Chrome 139.0.0.0 / Ubuntu 22.04"
   ],
@@ -17,27 +17,27 @@
           "name": "Check page title with screenshot",
           "meta": {},
           "errs": [],
-          "durationMs": 2549,
+          "durationMs": 2957,
           "unstable": false,
-          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-02_14-45-52/test-1/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-02_16-58-15/test-1/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
           "skipped": false
         },
         {
           "name": "Check page title with screenshot",
           "meta": {},
           "errs": [],
-          "durationMs": 1529,
+          "durationMs": 1634,
           "unstable": false,
-          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-02_14-45-52/test-2/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-02_16-58-15/test-2/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
           "skipped": false
         },
         {
           "name": "Check page title with screenshot",
           "meta": {},
           "errs": [],
-          "durationMs": 1429,
+          "durationMs": 1824,
           "unstable": false,
-          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-02_14-45-52/test-3/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
+          "screenshotPath": "/home/idd_umoreira/Desktop/projetos/prototipo/poc-test-cafe/screenshots/2025-09-02_16-58-15/test-3/Chrome_139.0.0.0_Ubuntu_22.04/1.png",
           "skipped": false
         }
       ]
@@ -51,7 +51,7 @@
           "name": "Logando com o usuario standard",
           "meta": {},
           "errs": [],
-          "durationMs": 3478,
+          "durationMs": 3855,
           "unstable": false,
           "screenshotPath": null,
           "skipped": false
@@ -73,7 +73,7 @@
             "skip": false
           },
           "errs": [],
-          "durationMs": 555,
+          "durationMs": 613,
           "unstable": false,
           "screenshotPath": null,
           "skipped": false
@@ -89,7 +89,7 @@
           "name": "Submit form and verify submission",
           "meta": {},
           "errs": [],
-          "durationMs": 2812,
+          "durationMs": 2814,
           "unstable": false,
           "screenshotPath": null,
           "skipped": false
@@ -98,7 +98,7 @@
           "name": "Enabling and select a rate",
           "meta": {},
           "errs": [],
-          "durationMs": 1361,
+          "durationMs": 1340,
           "unstable": false,
           "screenshotPath": null,
           "skipped": false
@@ -114,7 +114,7 @@
           "name": "Click checkboxes",
           "meta": {},
           "errs": [],
-          "durationMs": 464,
+          "durationMs": 489,
           "unstable": false,
           "screenshotPath": null,
           "skipped": false

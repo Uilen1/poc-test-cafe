@@ -2,34 +2,34 @@ import { Selector } from "testcafe";
 
 export default class BaseMap {
 
-    getElementById = (id) => Selector(`#${id}`);
+	getElementById = (id) => Selector(`#${id}`);
 
-    getElementByClass = (className) => Selector(`.${className}`);
+	getElementByClass = (className) => Selector(`.${className}`);
 
-    getElementByDataAttribute = (attr, value) => Selector(`[${attr}="${value}"]`);
+	getElementByDataAttribute = (attr, value) => Selector(`[${attr}="${value}"]`);
 
-    getElementByTag = (tag) => Selector(tag);
+	getElementByTag = (tag) => Selector(tag);
 
-    getElementByText = (text) => Selector('*').withText(text);
+	getElementByText = (text) => Selector('*').withText(text);
 
-    getNthElement = (selector, n) => selector.nth(n);
+	getNthElement = (selector, n) => selector.nth(n);
 
-    getChildElement = (parentSelector, childSelector) => parentSelector.find(childSelector);
+	getChildElement = (parentSelector, childSelector) => parentSelector.find(childSelector);
 
-    getSiblingElement = (selector, siblingSelector) => selector.sibling(siblingSelector);
+	getSiblingElement = (selector, siblingSelector) => selector.sibling(siblingSelector);
 
-    getParentElement = (selector) => selector.parent();
+	getParentElement = (selector) => selector.parent();
 
-    getElementByAttributeContains = (attr, value) => Selector(`[${attr}*="${value}"]`);
+	getElementByAttributeContains = (attr, value) => Selector(`[${attr}*="${value}"]`);
 
-    getElementByAttributeStartsWith = (attr, value) => Selector(`[${attr}^="${value}"]`);
+	getElementByAttributeStartsWith = (attr, value) => Selector(`[${attr}^="${value}"]`);
 
-    getElementByAttributeEndsWith = (attr, value) => Selector(`[${attr}$="${value}"]`);
+	getElementByAttributeEndsWith = (attr, value) => Selector(`[${attr}$="${value}"]`);
 
-    getElementByIndex = (selector, index) => selector.nth(index);
+	getElementByIndex = (selector, index) => selector.nth(index);
 
-    getElementCount = async (selector) => selector.count;
+	getElementCount = async (selector) => selector.count;
 
-    getElementText = async (selector) => selector.innerText;
+	getElementText = async (selector) => selector.innerText;
 
 }
