@@ -26,8 +26,14 @@ module.exports = {
 				console.log(`\nIniciando teste: ${t.testRun.test.name}`);
 			},
 			after: async t => {
-				const status = t.testRun.errs.length === 0 ? '#PASSED' : '#FAILED';
+				const status = t.testRun.errs.length === 0 ? 'PASSED' : 'FAILED';
 				console.log(`Finalizando teste: ${t.testRun.test.name} ###${status}\n`);
+				if (status == 'FAILED') {
+					t.testRun.errs.forEach((e, i) => {
+						console.error(`   [${i + 1}] ${e.errMsg}\n`);
+					});
+				}
+
 			}
 		}
 	},
