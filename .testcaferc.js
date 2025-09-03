@@ -38,12 +38,13 @@ module.exports = {
 		}
 	},
 	screenshots: {
+		path: './resources/screenshots',
 		takeOnFails: true,
 		fullPage: true
 	},
 	reporter: {
 		name: 'json',
-		output: 'reports/test-results.json'
+		output: './resources/reports/test-results.json'
 	},
 	speed: 1,
 	selectorTimeout: 10000,
