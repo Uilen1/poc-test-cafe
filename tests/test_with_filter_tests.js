@@ -1,5 +1,5 @@
 import XPathSelector from '../utils/xpath_selector';
-import { TEST_CAFE_URL } from '../configuration/constants/tests-url';
+import { TEST_CAFE_URL } from '../resources/constants/tests-url';
 
 
 fixture`Use XPath selectors - IS RUN`

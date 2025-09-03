@@ -1,5 +1,5 @@
 import ExamplePage from '../pages/example_page';
-import { TEST_CAFE_URL } from '../configuration/constants/tests-url';
+import { TEST_CAFE_URL } from '../resources/constants/tests-url';
 
 
 fixture('Test with Page Objects')

@@ -1,6 +1,6 @@
 import { Role } from "testcafe";
-import { LOGIN_URL } from "../configuration/constants/tests-url";
-import { ERROR, STANDARD, VISUAL } from "../data/users";
+import { LOGIN_URL } from "../resources/constants/tests-url";
+import { ERROR, STANDARD, VISUAL } from "../resources/data/users";
 import HomeMap from "../maps/home_map";
 import login_map from "../maps/login_map";
 
